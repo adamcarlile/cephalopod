@@ -19,8 +19,8 @@ module Cephalopod
       attribute :available_to, Types::Params::DateTime.optional
       attribute :links, Types::Strict::Array.of(Cephalopod::Models::Link)
 
-      # attribute :tariffs_active_at, Types::Params::DateTime.optional
-      # attribute :single_register_electricity_tariffs, Types::Params::Hash.map(Types::Strict::String, Types::Strict::String).optional
+      attribute :tariffs_active_at, Types::Params::DateTime.optional
+      attribute :single_register_electricity_tariffs, Types::Params::Hash.map(Types::Strict::String, Types::Strict::String).optional
 
       private
       
