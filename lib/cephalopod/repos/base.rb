@@ -34,7 +34,7 @@ module Cephalopod
       end
 
       def get(method: :get, headers: {}, query: {}, body: nil, **params, &block)
-        parse_response(@client.run_request(method, build_path(query: query, **params), body, headers, &block))
+        @get ||= parse_response(@client.run_request(method, build_path(query: query, **params), body, headers, &block))
       end
 
       private

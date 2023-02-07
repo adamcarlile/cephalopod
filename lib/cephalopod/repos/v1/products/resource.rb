@@ -5,7 +5,7 @@ module Cephalopod
         class Resource < Base
 
           model Cephalopod::Models::Product
-          resource_route '/v1/products/:code'
+          resource_route '/v1/products/:code/'
 
         end
       end

@@ -4,8 +4,12 @@ module Cephalopod
       module Products
         class Collection < Base
 
-          model Cephalopod::Models::Product
+          model Cephalopod::Models::ProductSummary
           resource_route '/v1/products/'
+
+          def variable
+            select(:variable?)
+          end
 
         end
       end

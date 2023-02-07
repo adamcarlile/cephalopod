@@ -1,6 +1,6 @@
 module Cephalopod
   module Models
-    class ElectricityMeterPoint < Base
+    class MeterPoint < Base
 
       attribute :gsp,           Types::Strict::String
       attribute :mpan,          Types::Strict::String
